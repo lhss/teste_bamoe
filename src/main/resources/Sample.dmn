@@ -562,7 +562,7 @@
           <dmn:text>Loan Pre-Qualification.Reason[2]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_07DEE39B-332E-4F49-867A-1E119DF81A19">
-          <dmn:text>&lt;=5</dmn:text>
+          <dmn:text>&gt;=5</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_721FB337-5136-4E33-9C0E-26C840EF07B3">
           <dmn:text>&quot;testenok&quot;</dmn:text>
@@ -597,8 +597,7 @@
             <kie:width>100</kie:width>
             <kie:width>1110</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_6E79E4D9-BBFB-4E90-8AA3-A6C153C3C946">
-          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_6E79E4D9-BBFB-4E90-8AA3-A6C153C3C946" />
           <kie:ComponentWidths dmnElementRef="_51ACEC3C-4207-4F5F-8FDD-9EDAA3270E60">
             <kie:width>1110</kie:width>
           </kie:ComponentWidths>
@@ -631,8 +630,7 @@
             <kie:width>100</kie:width>
             <kie:width>632</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_F0E80900-1964-4142-9A05-73E7A2E0F2CD">
-          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_F0E80900-1964-4142-9A05-73E7A2E0F2CD" />
           <kie:ComponentWidths dmnElementRef="_3D0A1979-E59A-483F-BDA8-138F99BA5AB3">
             <kie:width>632</kie:width>
           </kie:ComponentWidths>
