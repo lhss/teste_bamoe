@@ -511,71 +511,6 @@
       </dmn:literalExpression>
     </dmn:encapsulatedLogic>
   </dmn:businessKnowledgeModel>
-  <dmn:decision name="New Decision" id="_EBFB7D07-571D-4495-9BA1-823F37DA800A">
-    <dmn:variable id="_3FCBD3EA-809E-4F41-9BCA-DB6AAA006E80" name="New Decision" />
-    <dmn:informationRequirement id="_66B53639-4F07-47F6-AAFB-87C1B06D4173">
-      <dmn:requiredDecision href="#_21C50763-E49F-4D83-A824-16DA6AA87C64" />
-    </dmn:informationRequirement>
-    <dmn:informationRequirement id="_7F34B7C5-C2B2-439B-BA0D-43022568DD88">
-      <dmn:requiredInput href="#_44C63F99-3D7E-46B6-B3FD-575ACEEE970A" />
-    </dmn:informationRequirement>
-    <dmn:decisionTable id="_DF13F2BB-F966-40D7-88DA-1DA7C96BA150" hitPolicy="UNIQUE" label="New Decision">
-      <dmn:input id="_AE8DB400-F2FC-4FE5-B37B-3492B398D279">
-        <dmn:inputExpression id="_AA80BC4A-2A4B-4A81-A880-13DDD24F37DC" typeRef="string">
-          <dmn:text>Loan Pre-Qualification.Qualification</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_FF22A065-0215-4DCE-BFFD-0896FF4BA94C">
-        <dmn:inputExpression id="_197ACE6F-53BA-4DA1-A64C-4BE4412BED9B" typeRef="string">
-          <dmn:text>Loan Pre-Qualification.Reason</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_6051526D-8B44-4FBB-AD9B-5F35AC123B9E">
-        <dmn:inputExpression id="_4B3E6847-148A-4677-AE8F-EFCABA0863FE" typeRef="Teste 1">
-          <dmn:text>teste</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:output id="_387A14E8-6F1E-45B2-9F0D-9B3BBD548561" />
-      <dmn:annotation name="Annotations" />
-      <dmn:rule id="_610562EF-396C-4EAF-B997-87A1DFBD9FD1">
-        <dmn:inputEntry id="_BF4E7502-238F-446E-9441-FCCC7FEE00C3">
-          <dmn:text>Loan Pre-Qualification.Qualification[1]</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_C7A230F5-97E5-45B8-90B0-11A9E8428A11">
-          <dmn:text>Loan Pre-Qualification.Reason[1]</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_C644B516-74AC-4022-A4FF-D35316D03E7E">
-          <dmn:text>&lt;=5</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_D2147FDE-3B7A-4E27-8E95-03E2AAF0106F">
-          <dmn:text>&quot;teste ok&quot; + Loan Pre-Qualification.Reason[1] + &quot; &quot; + Loan Pre-Qualification.Qualification[1]</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text>// Your annotations here</dmn:text>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_BF6F8780-0EA9-4027-A911-3BFE5617FACB">
-        <dmn:inputEntry id="_CF4B5E90-FC22-4AF2-8418-6FFAA979D8CB">
-          <dmn:text>Loan Pre-Qualification.Qualification[2]</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_500A25FE-A06A-4786-B8E7-6BD2505DD03D">
-          <dmn:text>Loan Pre-Qualification.Reason[2]</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_07DEE39B-332E-4F49-867A-1E119DF81A19">
-          <dmn:text>&gt;=5</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_721FB337-5136-4E33-9C0E-26C840EF07B3">
-          <dmn:text>&quot;testenok&quot;</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text></dmn:text>
-        </dmn:annotationEntry>
-      </dmn:rule>
-    </dmn:decisionTable>
-  </dmn:decision>
-  <dmn:inputData name="teste" id="_44C63F99-3D7E-46B6-B3FD-575ACEEE970A">
-    <dmn:variable name="teste" id="_76F3B2A9-DCD8-4BD5-9D20-6CF165531D32" typeRef="Teste 1" />
-  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_1608585F-01C8-4A66-B3E5-F4422D4DD2CA" name="DRG" useAlternativeInputDataShape="false">
       <di:extension>
@@ -668,14 +603,6 @@
           <kie:ComponentWidths dmnElementRef="_E312D80E-0ECE-4D66-87EB-30DE20890BBC">
             <kie:width>50</kie:width>
             <kie:width>228</kie:width>
-          </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_DF13F2BB-F966-40D7-88DA-1DA7C96BA150">
-            <kie:width>60</kie:width>
-            <kie:width>240</kie:width>
-            <kie:width>197</kie:width>
-            <kie:width>118</kie:width>
-            <kie:width>118</kie:width>
-            <kie:width>240</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -821,20 +748,6 @@
       <dmndi:DMNEdge id="dmnedge-drg-_B6002F33-4888-48C5-B265-636030F8C2DC" dmnElementRef="_B6002F33-4888-48C5-B265-636030F8C2DC">
         <di:waypoint x="1031" y="256" />
         <di:waypoint x="600" y="151" />
-      </dmndi:DMNEdge>
-      <dmndi:DMNShape id="_1C180C9D-D21D-434F-AF22-27D63C139A69" dmnElementRef="_EBFB7D07-571D-4495-9BA1-823F37DA800A" isCollapsed="false" isListedInputData="false">
-        <dc:Bounds x="560" y="-80" width="160" height="80" />
-      </dmndi:DMNShape>
-      <dmndi:DMNEdge id="_37319BE8-2143-4BBB-B1BD-F445AC753B7B-AUTO-TARGET" dmnElementRef="_66B53639-4F07-47F6-AAFB-87C1B06D4173" sourceElement="dmnshape-drg-_21C50763-E49F-4D83-A824-16DA6AA87C64" targetElement="_1C180C9D-D21D-434F-AF22-27D63C139A69">
-        <di:waypoint x="600" y="120" />
-        <di:waypoint x="640" y="-40" />
-      </dmndi:DMNEdge>
-      <dmndi:DMNShape id="_7DB6BBF5-4116-47BA-875F-E996827B2EB8" dmnElementRef="_44C63F99-3D7E-46B6-B3FD-575ACEEE970A" isCollapsed="false" isListedInputData="false">
-        <dc:Bounds x="1180" y="340" width="160" height="80" />
-      </dmndi:DMNShape>
-      <dmndi:DMNEdge id="_3010E574-ADF7-482C-A176-C632013C43E5" dmnElementRef="_7F34B7C5-C2B2-439B-BA0D-43022568DD88" sourceElement="_7DB6BBF5-4116-47BA-875F-E996827B2EB8" targetElement="_1C180C9D-D21D-434F-AF22-27D63C139A69">
-        <di:waypoint x="1260" y="380" />
-        <di:waypoint x="720" y="-40" />
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
